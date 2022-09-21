@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePlace</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="script.js">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light fixed-top">
+        <div class="container">
+          <a class="navbar-brand" style="font-size: 30px;"  href="#"><span class="text-warning" style="font-size: 30px;">Home</span>Space</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+            
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="#ana">Anasayfa</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;"href="#kira">Kiralık Bak</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="#satın">Satın Al</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" style="font-weight: bold;" href="#kendi">Kirala-Sat</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link text-warning" style="font-weight: bold;" href="#iletisim">İletişim</a>
+              </li>
+              <button type="button" style="margin-right: 20px;" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@getbootstrap">Giriş Yap</button>
+              <div class="modal fade" style="z-index:9999999;" id="exampleModal" tabindex="1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title" id="exampleModalLabel">New message</h5>
+                      <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="recipient-name" class="col-form-label">Recipient:</label>
+                          <input type="text" class="form-control" id="recipient-name">
+                        </div>
+                        <div class="mb-3">
+                          <label for="message-text" class="col-form-label">Message:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                      <button type="button" class="btn btn-primary">Send message</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <button type="button" class="btn btn-secondary" >Kayıt Ol</button>
+           
+              
+            </ul>
+           
+          </div>
+        </div>
+      </nav>
+
+      <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="false">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./resim/ev1.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption ">
+              <h5>İlk evini Kiralamaya Başla</h5>
+              <p>Kiralama ayrıtılırını konuşmak için bizimle iletişime geçiniz</p>
+              <br>
+              <a href="#" class="btn btn-warning mt3">İletişim</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./resim/ev2.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption ">
+              <h5>İlk evini satın almaya hazırmısın ?</h5>
+              <p>Satın alma detayları konuşmak için bizimle iletişime geçiniz</p>
+              <br>
+              <a href="#" class="btn btn-warning mt3">İletişim</a>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./resim/ev3.jpg" class="d-block w-100" alt="...">
+            <div class="carousel-caption ">
+              <h5>Evini İster Kirala , İster Satılığa çıkar</h5>
+              <p>Evini kiralamak , yada Satılığa çıkarmak için iletişime geç</p>
+              <br>
+              <a href="#" class="btn btn-warning mt3">İletişim</a>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <section id="about" class="about-section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-12 col-12">
+                    <div class="about-img">
+                        <img src="./resim/about.jpg" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                    <div class="about-text">
+                        <h2> <span>HomePlace</span>  İle Kaliteli Mülk Alım Satım ve Kiralama</h2>
+                        <p>HomePlace şirketimiz sayesinde evinizi isterseniz kiraya çıkarın isterseniz de satılığa 
+                        çıkartın. Kendinizie ait  Kiralık yada Satılık evleriniz yoksa dert etmeyin , Homeplace 
+                        ile sayfadaki kiralık yada satılık sayfalara da göz atabilirsiniz
+                        </p>
+                        <a href="#" class="btn btn-warning">Göz At</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </section>
+
+      <section id="services" class="services section-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                  <div class="section-header text-center pb-5 "> 
+                    <h2 style="color: orange; ">Servislerimiz</h2>
+                    <p> <span style="color: orange;"> HomePlace</span> olarak birden fazla servisler ile karşınızdayız <br> Bunlar <span style="color: orange;">Ev kiralama , Ev satın Alma </span> , Yada kendi evini <span style="color: orange;">ister sat </span> yada <span style="color: orange;"> ister  kiraya</span> çıkar</p>
+                  </div>   
+                </div>
+            </div>
+            <div class="container">
+              
+            </div>
+            <div class="row" >
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white  text-center bg-dark pb-12">
+                        <div class="card-body">
+                            <i class="bi bi-house-door-fill"></i>
+                            <h3 class="card-title">Ev Kiralama</h3>
+                            <p class="lead">Dilediğin evlerin arasından kendine uygun kiralik evi seç müşteriyle iletişime
+                            geç,yada bizimle iletişime geç ve sıfır sıkıntısız ev kirala
+                            </p>
+                            <button class="btn btn-warning text-dark">Kiralık Evler</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white  text-center bg-dark pb-12">
+                        <div class="card-body">
+                            <i class="bi bi-house-fill"></i>
+                            <h3 class="card-title">Ev Satın Alma</h3>
+                            <p class="lead">Dilediğin evlerin arasından kendine uygun satılık evi seç müşteriyle iletişime
+                            geç,yada bizimle iletişime geç ve sıfır sıkıntısız evini satın al
+                            </p>
+                            <button class="btn btn-warning text-dark">Satılık Evler</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-12 col-lg-4">
+                    <div class="card text-white  text-center bg-dark pb-12">
+                        <div class="card-body">
+                            <i class="bi bi-house-heart-fill"></i>
+                            <h3 class="card-title">Evini Sat yada Kirala</h3>
+                            <p class="lead">HomePlace şirketi aracılığıyla
+                                eviniizi ister kiralığa çıkarabilirsiniz,istersenizde satabilirsiniz
+                            </p>
+                            <button class="btn btn-warning text-dark">Evini Sat Yada Kirala</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+  
+        
+      </section>
+      <div class="container">
+        <h1>Kategorini <span style="color: orange;">Seç</span> </h1>
+        <div class="row">
+          <div class="col-md-4"id="kira">
+            <div class="card" style="width: 18rem;">
+              <img src="./resim/kiralık.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title"style="color: orange;">Kiralık Evler</h5>
+                <p class="card-text">Türkiyenin 81 ilinden her konumda kiralık ev arayabilir ve aynı zamanda konumlarını öğrenip kira veren ile iletişime geçebilirsin</p>
+                <a href="#" class="btn btn-warning">Kiralık Evlere Göz At</a>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-4" id="satın">
+            <div class="card" style="width: 18rem;">
+              <img src="./resim/satılık.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="color: orange;">Satılık Evler</h5>
+                <p class="card-text">Türkiyenin 81 ilinden her konumda satılık ev arayabilir ve aynı zamanda konumlarını öğrenip satıcılar ile iletişime geçebilirsin</p>
+                <a href="#" class="btn btn-warning">Satılık Evlere Göz At</a>
+              </div>
+              
+            </div>
+          </div>
+          <div class="col-md-4 " id="kendi">
+            <div class="card" style="width: 18rem;">
+              <img src="./resim/SATKİR.jpg" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h5 class="card-title" style="color: orange;">Kirala Yada Sat</h5>
+                <p class="card-text">Boşta duran evin yada konutun mu var HomePlace aracılığı ile evini yada herhangi bir konutunu rahatça ister satılığa çıkar  istersende kiraya çıkar.</p>
+                <a href="#" class="btn btn-warning">Evini Kirala Yada Sat</a>
+              </div>
+              
+            </div>
+          </div>
+          </div>
+        </div>
+        <h1 id="iletisim" style="margin-top: 30px;">Bizimle <span style="color: orange;"> İletişime</span> Geç</h1>
+        <div class="background" style="margin-top: 30px;">
+          <div class="container">
+            <div class="screen">
+              <div class="screen-header">
+                <div class="screen-header-left">
+                  <div class="screen-header-button close"></div>
+                  <div class="screen-header-button maximize"></div>
+                  <div class="screen-header-button minimize"></div>
+                </div>
+                <div class="screen-header-right">
+                  <div class="screen-header-ellipsis"></div>
+                  <div class="screen-header-ellipsis"></div>
+                  <div class="screen-header-ellipsis"></div>
+                </div>
+              </div>
+              <div class="screen-body">
+                <div class="screen-body-item left">
+                  <div class="app-title">
+                    <span>İletişim</span>
+                    <span>Formu</span>
+                  </div>
+                  <div class="app-contact">Bizimle İletişime Geç : 0541 596 4621</div>
+                </div>
+                <div class="screen-body-item">
+                  <div class="app-form">
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="NAME" >
+                    </div>
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="EMAIL">
+                    </div>
+                    <div class="app-form-group">
+                      <input class="app-form-control" placeholder="CONTACT NO">
+                    </div>
+                    <div class="app-form-group message">
+                      <input class="app-form-control" placeholder="MESSAGE">
+                    </div>
+                    <div class="app-form-group buttons">
+                      <button class="app-form-button">CANCEL</button>
+                      <button class="app-form-button">SEND</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+        </div>
+        
+      
+        <footer class="footer">
+          <div class="foot-container">
+              <div class="row">
+                  <div class="footer-col">
+                      <h4>Servisler</h4>
+                      <ul>
+                          <li><a href="">Ev Kiralama</a></li>
+                          <li><a href="">Ev Satın Alma</a></li>
+                          <li><a href="">Evini Sat-Kirala</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-col">
+                      <h4>Kategoeriler</h4>
+                      <ul>
+                          <li><a id="ınstagram" href="#">Kiralık Evler</a></li>
+                          <li><a id="shopier" href="#">Satılık Evler</a></li>
+                          <li><a id="dolap" href="#">Sat-Kirala</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-col">
+                      <h4>İletişim</h4>
+                      <ul>
+                          <li><a href="">Facebook</a></li>
+                          <li><a href="">İnstagram</a></li>
+                      </ul>
+                  </div>
+                  <div class="footer-col">
+                    <h4>Gmail ve Telefon Adresi</h4>
+                    <ul>
+                        <li><a href="">baybaydar43@gmail.com</a></li>
+                        <li><a href="">0541 XXX XXXX</a></li>
+                    </ul>
+                    
+                </div>
+                  
+              </div>
+          </div>
+        </footer>
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
